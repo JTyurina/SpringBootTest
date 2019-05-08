@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <style>
+   .box { text-align: center; background-color: #eeeeee; }
+   .centered { display: inline-block; margin: 0; }
+   .playboard { border-spacing: 0; border-collapse: collapse; }
+   .playboard th { padding: .5em; }
+   .playboard td { border: 1px solid; width: 5em; height: 5em; text-align: center; vertical-align: middle; }
+   .playboard .green { background: #013220; }
+   .playboard .red { background: #b00000; }
+  </style>
+</head>
+<body ng-app="springDemo">
+<div class="container" style="margin-top: 30px" ng-controller="AppCtrl">
+
+    <div class="box">
+        <div class="centered">
+    <table class="playboard">
+        <tbody>
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+
+<!--        <tr ng-repeat="list in results">-->
+<!--            <td ng-class='{red : list.changeColor, green: !list.changeColor}'>{{list.value}}</td>-->
+<!--            <td>{{list.price}}</td>-->
+<!--        </tr>-->
+        </tr>
+        <tr>
+            <th>1</th>
+            <td class="green" id="11"></td>
+            <td class="green" id="21"></td>
+            <td class="green" id="31"></td>
+            <td class="green" id="41"></td>
+            <td class="green" id="51"></td>
+            <td class="green" id="61"></td>
+            <td class="green" id="71"></td>
+            <td class="green" id="81"></td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td class="green" id="12"></td>
+            <td class="green" id="22"></td>
+            <td class="green" id="32"></td>
+            <td class="green" id="42"></td>
+            <td class="green" id="52"></td>
+            <td class="green" id="62"></td>
+            <td class="green" id="72"></td>
+            <td class="green" id="82"></td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td class="green" id="13"></td>
+            <td class="green" id="23"></td>
+            <td class="green" id="33"></td>
+            <td class="green" id="43"></td>
+            <td class="green" id="53"></td>
+            <td class="green" id="63"></td>
+            <td class="green" id="73"></td>
+            <td class="green" id="83"></td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td class="green" id="14"></td>
+            <td class="green" id="24"></td>
+            <td class="green" id="34"></td>
+            <td class="green" id="44"></td>
+            <td class="green" id="54"></td>
+            <td class="green" id="64"></td>
+            <td class="green" id="74"></td>
+            <td class="green" id="84"></td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td class="green" id="15"></td>
+            <td class="green" id="25"></td>
+            <td class="green" id="35"></td>
+            <td class="green" id="45"></td>
+            <td class="green" id="55"></td>
+            <td class="green" id="65"></td>
+            <td class="green" id="75"></td>
+            <td class="green" id="85"></td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td class="green" id="16"></td>
+            <td class="green" id="26"></td>
+            <td class="green" id="36"></td>
+            <td class="green" id="46"></td>
+            <td class="green" id="56"></td>
+            <td class="green" id="66"></td>
+            <td class="green" id="76"></td>
+            <td class="green" id="86"></td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td class="green" id="17"></td>
+            <td class="green" id="27"></td>
+            <td class="green" id="37"></td>
+            <td class="green" id="47"></td>
+            <td class="green" id="57"></td>
+            <td class="green" id="67"></td>
+            <td class="green" id="77"></td>
+            <td class="green" id="87"></td>
+        </tr>
+        <tr>
+            <th>8</th>
+            <td class="green" id="18"></td>
+            <td class="green" id="28"></td>
+            <td class="green" id="38"></td>
+            <td class="green" id="48"></td>
+            <td class="green" id="58"></td>
+            <td class="green" id="68"></td>
+            <td class="green" id="78"></td>
+            <td class="green" id="88"></td>
+        </tr>
+        </tbody>
+    </table>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+package service;
+
+import org.springframework.stereotype.Service;
+import service.StackOverFlowWebsite;
+import model.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+public class StackoverflowService{
+
+    private static List<StackOverFlowWebsite> items = new ArrayList<>();
+    static {
+
+        items.add(new StackOverFlowWebsite("stackoverflow", "http://stackoverflow.com",
+                "http://promo.kolbasa-vs.ru/img/top-info.jpg","Stack Exchange", "for professionals"));
+        items.add(new StackOverFlowWebsite("yandex", "http://google.com",
+                "http://promo.kolbasa-vs.ru/img/top-info.jpg","Google", "search tools"));
+    }
+
+    public List<StackOverFlowWebsite> findAll(){
+        return items;
+    }
+
+}
